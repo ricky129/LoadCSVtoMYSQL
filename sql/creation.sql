@@ -1,0 +1,7 @@
+CREATE DATABASE users;
+USE users;
+CREATE TABLE utenti (
+    userid INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password CHAR(64) NOT NULL
+);
